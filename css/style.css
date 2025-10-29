@@ -271,13 +271,38 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .sidebar {
+    position: fixed;
+    top: 0;
     left: -250px;
+    width: 250px;
+    height: 100%;
+    background: var(--card-bg);
+    transition: left 0.3s ease;
+    z-index: 999;
   }
+
   .sidebar.active {
     left: 0;
   }
+
+  /* Move the menu button outside so it’s visible when sidebar is hidden */
+  .menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
   main {
     margin-left: 0;
+    padding-top: 3rem; /* avoid overlap with menu button */
   }
 }
 
@@ -429,3 +454,4 @@ body.dark-mode .car img {
   text-align: justify;
 
 }
+

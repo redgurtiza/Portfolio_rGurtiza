@@ -335,7 +335,7 @@ footer {
   background-color: #005fcc;
 }
 
-/* ===== FLY THAT TRAVELS TOP → BOTTOM → TOP ACROSS FULL PAGE ===== */
+/* ===== FLY THAT TRAVELS TOP - BOTTOM - TOP ACROSS FULL PAGE ===== */
 
 /* fly covers entire document height */
 .fly {
@@ -427,4 +427,5 @@ body.dark-mode .car img {
 
 .justified-paragraph {
   text-align: justify;
+
 }
